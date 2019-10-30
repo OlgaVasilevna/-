@@ -46,24 +46,24 @@ body {
     font-size: 20px;
     line-height: 36px;
     font-weight: 400;
+    list-style-type: none;
 }
 
 .main-header-list-item {
-    list-style-type: none;
     position: relative;
 }
 
 .main-header-list-item:before {
     content: "";
     display: block;
-    width: 25px;
-    height: 19px;
+    width: 26px;
+    min-height: 19px;
     background: url(../img/check_icon.png);
     -webkit-background-size: cover;
     background-size: contain;
     /*border: 1px solid #fff;*/
     position: absolute;
-    top: 10px;
+    top: 8px;
     left: -36px;
 }
 
@@ -104,7 +104,7 @@ body {
     font-size: 30px;
     font-weight: 400;
     line-height: 36px;
-    margin: 0 0 0 0;
+    margin: 0 0 25px 0;
 }
 
 .text1-about-product {
@@ -113,6 +113,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    margin: 0 0 20px 0;
 }
 
 .text2-about-product {
@@ -121,6 +122,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    margin: 0;
 }
 
 .video-about-product {
@@ -128,7 +130,7 @@ body {
     height: 245px;
     background-color: #445161;
     float: right;
-    margin: 0 0 0 0;
+    margin: 0;
 }
 
 .dignity {
@@ -152,13 +154,13 @@ body {
     font-size: 30px;
     font-weight: 400;
     line-height: 36px;
-    margin: 0 0 0 0;
+    margin: 0;
     text-align: center;
 }
 
 .dignity-list {
-    padding: 0 0 0 0;
-    margin: 0 0 0 0px;
+    padding: 0;
+    margin: 0px;
     color: #333333;
     font-family: "Arial";
     font-size: 16px;
@@ -172,7 +174,7 @@ body {
 
 .dignity-list-item {
     width: 530px;
-    margin: 0 0 0 0;
+    margin: 0;
     padding: 0 0 0 50px;
 }
 
@@ -180,7 +182,7 @@ body {
     content: "";
     display: block;
     width: 32px;
-    height: 32px;
+    min-height: 32px;
     background-color: #445161;
     background-image: url(../img/Layer_2.png);
     background-repeat: no-repeat;
@@ -314,6 +316,7 @@ body {
     background-color: #ebebeb;
     color: #333333;
     font-family: "Arial";
+    font-style: italic;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
@@ -357,7 +360,7 @@ body {
 }
 
 .prices-title {
-    margin: 0 0 0 0;
+    margin: 0;
     text-align: center;
     width: 100%;
     color: #445161;
@@ -413,6 +416,7 @@ body {
     line-height: 71px;
     text-align: center;
     background-color: #fff;
+    margin: 0;
 }
 
 .prices-pack-list {
@@ -435,7 +439,7 @@ body {
 
 .prices-pack-button {
     width: 260px;
-    height: 40px;
+    min-height: 40px;
     background-color: #fff;
     color: #445161;
     font-family: "Arial";
@@ -445,6 +449,12 @@ body {
     text-transform: uppercase;
     border-radius: 8px;
     margin: 0 20px 20px 20px;
+}
+.prices-pack-button:hover{
+  background-color: gray;
+  color: white;
+  border-color: white;
+  border: 1px solid #fff;
 }
 
 .main-footer-contacts{
@@ -488,7 +498,7 @@ body {
 .main-footer_form input[type="email"],
 .main-footer_form textarea {
   width: 100%;
-  height: 40px;
+  min-height: 40px;
   margin: 0 0 20px 0;
   padding: 10px;
   box-sizing: border-box;
@@ -522,7 +532,6 @@ body {
   outline: none;
 resize: none;
 }
-
 input[placeholder],
 textarea[placeholder] {
   text-overflow:ellipsis;
@@ -545,7 +554,7 @@ input:-ms-input-placeholder  */
   border-radius: 5px;
   background-color:  #ffffff;
   width: 140px;
-  height: 40px;
+  min-height: 40px;
   text-transform: uppercase;
   font-family: "Arial";
   color:  #445162;
@@ -555,37 +564,35 @@ input:-ms-input-placeholder  */
   text-align: center;
   outline: none;
 }
-
 .main-footer_form input[type="submit"]:hover {
   background-color: gray;
   color: white;
 }
-
-.main-footer_form input[type="submit"]:active {
+.main-footer_form input[type="submit"]:active,.prices-pack-button:active {
   background-color:  #ffffff;
   color:  #445162;
 }
-
 .main-footer-contact_details{
-  width: 250px;
-  height: 300px;
+  width: 300px;
+  min-height: 300px;
  /*border: 1px solid white;*/
   color: #fff;
   font-size: 16px;
   font-weight: 400;
   line-height: 45px;
   font-family: "Arial";
-  top: -17px;
   position: relative;
-    }
-
+  }
+.icon{
+    display: block;
+}
 .footer_contacts-list{
-    list-style-type: none;
+    margin: 0 0 10px 40px;
 }
 .fa-twitter, .fa-facebook-f, .fa-linkedin-in, .fa-glide-g, .fa-youtube{
     color:#445162;
     width: 42px;
-    height: 42px;
+    min-height: 42px;
     border-radius: 21px;
     background-color: #fff;
     text-align: center;
