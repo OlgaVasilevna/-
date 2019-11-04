@@ -276,6 +276,7 @@ body {
     padding: 50px 0 50px 50px;
     box-sizing: border-box;
     /*border: 1px solid red;*/
+    clear: both;
 }
 
 .reviews:after {
@@ -306,7 +307,6 @@ body {
     display: block;
     border-radius: 50%;
     float: left;
-    
 }
 
 .reviews-recall-text {
@@ -350,13 +350,10 @@ body {
     clear: both;
     padding: 50px;
     box-sizing: border-box;
-    position: relative;
-}
-
-.prices:after {
-    content: "";
-    width: 100%;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .prices-title {
@@ -373,7 +370,7 @@ body {
 .prices-pack {
     width: 298px;
     border: 1px solid #445161;
-    position: absolute;
+    box-sizing: border-box;
     background-color: #445161;
     border-radius: 3%;
     float: left;
@@ -381,21 +378,8 @@ body {
     bottom: 50px;
 }
 
-.prices-pack:nth-child(4) {
-    left: 830px;
-}
-
-.prices-pack:nth-child(2) {
-    left: 144px;
-}
-
-.prices-pack:nth-child(3) {
-    left: 488px;
-}
-
 .prices-pack-heading {
     width: 298px;
-    min-height: 50px;
     color: #ffffff;
     font-family: "Arial";
     font-size: 24px;
@@ -408,7 +392,6 @@ body {
 .prices-pack-check {
     display: block;
     width: 298px;
-    min-height: 71px;
     color: #445162;
     font-family: "Arial ";
     font-size: 40px;
@@ -421,10 +404,9 @@ body {
 
 .prices-pack-list {
     width: 250px;
-    min-height: 86px;
     background-color: #445162;
     margin: 0;
-    padding: 20px;
+    padding: 20px 0 20px 20px;
    list-style-position: inside;
 }
 
@@ -435,7 +417,6 @@ body {
     font-weight: 400;
     line-height: 24px;
 }
-
 
 .prices-pack-button {
     width: 260px;
